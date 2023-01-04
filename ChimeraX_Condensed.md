@@ -1,7 +1,23 @@
 # ChimeraX Condensed Guide
-
-## General Program Information
 ChimeraX is an application for molecular visualization and analysis, with an emphasis on molecular assemblies. It can be downloaded free of charge for academic, government, nonprofit, and personal use. Visit the UCSF ChimeraX page at https://www.cgl.ucsf.edu/chimerax/index.html for more information. 
+
+## Contents
+- [Navigating the Program](#navigating-the-program)
+  + [Interface](#interface)
+  + [Loading Proteins](#loading-proteins)
+  + [Basic controls](#basic-controls)
+- [Model Preparation](#model-preparation)
+  + [Selecting parts](#selecting-parts)
+  + [Showing and hiding parts](#showing-and-hiding-parts)
+  + [Coloring parts](#coloring-parts)
+  + [Showing and hiding labels](#showing-and-hiding-labels)
+  + [Finding H-Bond contacts](#finding-h-bond-contacts)
+  + [Using the Sequence Pane](#using-the-sequence-pane)
+  + [Working with Surfaces](#working-with-surfaces)
+  + [Deleting extra chains](#deleting-extra-chains)
+- [ChimeraX with VR](#chimerax-with-vr)
+  + [Opening VR](#opening-vr)
+  + [Basic Controls](#basic-controls)
 
 ## Navigating the Program
 ### Interface
@@ -12,7 +28,7 @@ ChimeraX is an application for molecular visualization and analysis, with an emp
 - The **Command Line** spans across the bottom of the program and is used to input commands.
 ![Screenshot of the ChimeraX user interface. See information above.](https://raw.githubusercontent.com/OUETL/WorkflowDocumentation/main/chimerax%20screenshots/chimerax-default-interface.png)
 
-### Loading Proteins
+### Loading proteins
 Proteins can be downloaded from the internet and loaded into the program’s workspace. They can also be directly loaded into the program’s workspace using the command line. 
 - Navigate to RCSB at https://www.rcsb.org/ to download proteins. 
   1. Search for the desired protein in the search bar in the top right.
@@ -96,7 +112,7 @@ To select residues, hold **Ctrl** and click on the desired part. Selections will
   - White regions are sections with no secondary structure.
   - White regions with a black box around them are disordered sections which were not determined by x-ray.
 
-### Working with Surfaces
+### Working with surfaces
 Protein surfaces can be mapped using presets which map different aspects of the protein. For example, the “Hydrophobic” color preset will calculate the molecular lipophilicity potential surface by recoloring the protein surface. With the Hydrophobic preset coloring, dark cyan represents the most hydrophilic surface and goldenrod represents the most lipophilic surface.
 - To map surfaces, click on any of the presets in the **Coloring** section of the **Molecule Display** tab. Each button will display more information upon hover.
 - To alter the transparency of visible surfaces, use the command `trans` and the percentage of the desired transparency. For example: `trans 50`
