@@ -50,7 +50,7 @@ To select residues, hold **Ctrl** and click on the desired part. Selections will
 - To reset the look of the model, go to the program’s menu, click on **Presets**, then **Original Look**.
 
 ### Coloring parts
-![ALT TEXT HERE COME BACK LATER](![image](https://user-images.githubusercontent.com/70342309/210636599-1ec8f35b-ad94-4b1d-b139-4baf1c4aa630.png)
+![The color of the model is displayed in a colored square at the top center of the Models pane.](https://raw.githubusercontent.com/OUETL/WorkflowDocumentation/main/chimerax%20screenshots/model-color.PNG)
 - To change the color of the entire protein, click on the colored box in the bottom right panel labeled **Models**. Choose a new color either by clicking on a default basic color, entering a hex code in the HTML input box, or selecting a custom color from the large color gradient.
   - To change the color of the entire protein using the command line, use the `color` command and the name or hex code of the new color. For example: `color green` or `color #40526B`
 - To change the color of a specific part of the protein, first select the parts of the protein that needs to be changed, then use the command `color sel` and the name or hex code of the new color. For example: `color sel green` or `color sel #FFC0CB`
@@ -110,7 +110,7 @@ Protein surfaces can be mapped using presets which map different aspects of the 
 ### Deleting extra chains
 At the top of the Log pane, chain information and non-standard residues information will be displayed. The letters underneath “Chain” in the Chain information panel indicate the number of chains. For example, a protein with Chain A, B, C, D, indicates that there are 4 chains, which the program refers to as “A”, “B,” etc. respectfully.
 - Chains and non-standard residues can be selected by clicking on the chain names in the **Log** panel.
-- ==**Deletion is permanent and cannot be undone.**== To delete chains, use the command `delete`, a forward slash (/), and the name of the chain to be deleted. For example: `delete /a` or `delete /d`
+- **Deletion is permanent and cannot be undone.** To delete chains, use the command `delete`, a forward slash (/), and the name of the chain to be deleted. For example: `delete /a` or `delete /d`
   - To delete multiple chains, use the command `delete`, a forward slash (/), and the names of the chains you want to delete separated by commas. For example: `delete /a,b,d`
   - It is also possible to delete a series of chains using commands in this format: `delete /a-d` and `delete /b-c`
 
@@ -129,4 +129,5 @@ The VR headset will continue to function as the primary display until the comman
 - Show the VR user interface panel by pressing the B button on the left controller or the Y button on the right controller. In VR, the correct button will be marked with a rectangle on the cones representing the controllers.
   - Move the VR user interface by holding the same button and moving the controller.
 - The buttons in the VR user interface panel can be clicked using the pointer finger trigger on the backside of the controller.
+
 ![Screenshot demonstrating the functions of the relevant buttons on the VR controllers. See information above.](https://raw.githubusercontent.com/OUETL/WorkflowDocumentation/main/chimerax%20screenshots/vr-controller-explained.png)
